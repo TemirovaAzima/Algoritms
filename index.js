@@ -13,7 +13,7 @@ const kerakliMaxsulotlar=(maxsulot)=>{
 let endTime = new Date()
 
 kerakliMaxsulotlar('apple')
-console.log(`${endTime-startTime}`)
+console.log(`${endTime-startTime}`)jkm
 //  Big O = O(n)
 // const start = new Date()
 // console.log(start.getMinutes())
