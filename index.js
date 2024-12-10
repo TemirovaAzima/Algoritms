@@ -1,9 +1,16 @@
-const studentDB = ['husan', 'aslbek','rose','lili','jimin']
-function findStudents(allStudents, studentName){
-    for(let i = 0; i<allStudents.length;i++){
-        if(allStudents[i]===studentName){
-            console.log(`Found ${studentName}`)
+
+
+const findDuplicate=(arr)=>{
+    let duplicates= []
+    for(let i=0;i<arr.length; i++){
+        for(let j = i+1; j<arr.length; j++){
+            if(arr[i]===arr[j] && !duplicates.includes(arr[i])){
+                duplicates.push(arr[i])
+            }
         }
     }
+    return duplicates
 }
-findStudents(studentDB,'rose')
+
+const numbers= [1,2,3,4,2,5,1]
+console.log(findDuplicate(numbers))
