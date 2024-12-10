@@ -1,6 +1,9 @@
-const products= ['tuxum', 'non', 'qulupnay', 'sut', 'banan']
-const aynanBittaMaxsulotIzlash=(maxsulotlar, index)=>{
-    return maxsulotlar[index]
+const studentDB = ['husan', 'aslbek','rose','lili','jimin']
+function findStudents(allStudents, studentName){
+    for(let i = 0; i<allStudents.length;i++){
+        if(allStudents[i]===studentName){
+            console.log(`Found ${studentName}`)
+        }
+    }
 }
-console.log(aynanBittaMaxsulotIzlash(products, 3))
-//B o notation = O(1)
+findStudents(studentDB,'rose')
